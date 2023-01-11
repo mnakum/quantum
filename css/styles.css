@@ -1,0 +1,169 @@
+@font-face {
+    font-family: quicksand;
+    src: url(../assets/Quicksandfont1/Quicksand-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: quicksand;
+    width: 1024px;
+    margin: auto;
+    background-color: #EEEEEE;
+    opacity: 100%;
+}
+
+.outer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    width: 100%;
+    padding-top: 11px;
+    align-self: center;
+    background-image: url("../assets/header\ pattern\ svg.svg");
+    border-bottom: 2px solid #31B9E4;
+    border-width: 2px;
+}
+
+.form{
+    /* margin : 108 268 140 268; */
+    margin-top:108 ;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF;
+    opacity: 1;
+    width: 488px;
+    margin: 50px 268px 0 268px;
+    border-top : 2px solid #3AC7EC;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading{
+    display: flex;
+}
+
+.back{
+    margin: 20px 0 auto 32px ;
+}
+
+.heading h1{
+    color: #222222;
+    font-size: 24px;
+    margin: 16px auto auto 77px;
+    letter-spacing: 0;
+}
+
+.inps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 34px;
+    margin-right: 32px;
+}
+.radios{
+    margin-top: 34px;
+
+    display: flex;
+    color: #333333;
+}
+
+.rad{
+    margin-right: 32px;
+}
+/* change style of radio button */
+.radbtn{
+    margin-left: 0;
+}
+
+.smlab{
+    color: #666666;
+    font-size: 12px;
+    margin-top: 23px;
+}
+
+select {
+    all: unset;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+    border-bottom: 1px solid #9d9b9b;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    background: url("../assets/icons/arrow-down.svg") no-repeat right;
+
+}
+.creds{
+    display: flex;
+    flex-direction: column;
+    margin-top: 23px
+}
+.creds input{
+    all: unset;
+    font-size: 16px;
+    color: #222222;
+    border-bottom: 1px solid #9d9b9b;
+    margin-bottom: 0;
+    margin-top: 33px;
+}
+
+
+
+.forgot{
+    color: #1F7A54;
+    font-size: 14px;
+    margin-top: 0;
+    align-self: end;
+    font-weight: bold;
+}
+
+.remember{
+    margin-left: 0;
+    color: #222222;
+    font-weight: bold;
+}
+
+.remember input{
+    margin:0
+}
+
+.btn{
+    background-color: #3FD28B;
+    font-family:quicksand ;
+    font-weight: bold;
+    color: #1F2834;
+    border-style: none;
+    height: 40px;
+    font-size: 14px;
+    margin: 34px 136px 24px 136px;
+    box-shadow: 0px 3px 5px #0000003D;
+}
+.about{
+    display: flex;
+    color: #1F7A54;
+    font-size: 14px;
+    margin-top: 32px;
+}
+.about .sep{
+    color: #0000001F;
+    font-weight:bolder;
+}
+
+.footer{
+    background: #E0E1E1;
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+.footer .sep{
+    color: #0000001F;
+    margin :auto 16px auto 16px;
+    font-weight: bolder;
+}
