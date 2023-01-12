@@ -5,19 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/course.css" />
+    <script  >
+     const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-    <title>Login</title>
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+    </script>
+    <title>DASHBOARD</title>
   </head>
   <body>
-    <div class="outer">
-      <div class="header">
-        <img src="./assets/icons/logo used in header.svg" alt="" />
+    <header class="header">
+        <nav class="navbar">
+
+            <img src="./assets/icons/logo used in header.svg" alt="" />
+            <div style="display: flex;" > 
+
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Contact</a>
+                </li>
+              </ul>
+              <ul class="nav-menu2">
+                <li class="btn2">
+                  <img src="./assets/icons/alerts.svg" alt="alert" />
+                </li>
+                <li class="btn3">
+                  <img src="./assets/icons/announcements.svg" alt="announcements" />
+                </li>
+                <li class="btn3">
+                  <img src="./assets/icons/account_circle.svg" alt="user" />
+                </li>
+              </ul>
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </nav>
+          </div>
+</header>
+
+
+
+
+
+    <!-- <div class="header" id="navbar">
+      <img src="./assets/icons/logo used in header.svg" alt="" />
+      <div style="display: flex;">
+
         <div class="btns">
           <button class="btn1">DASHBOARD</button>
           <button class="btn1">CONTENT</button>
           <button class="btn1">USERS</button>
           <button class="btn1">REPORTS</button>
           <button class="btn1">ADMIN</button>
+        </div>
+        <div class="btns2"> 
           <button class="btn2">
             <img src="./assets/icons/alerts.svg" alt="alert" />
           </button>
@@ -27,8 +85,17 @@
           <button class="btn3">
             <img src="./assets/icons/account_circle.svg" alt="user" />
           </button>
+          <div class="hamburger">
+            <button class="hmbtn">DASHBOARD</button>
+            <button class="hmbtn">CONTENT</button>
+            <button class="hmbtn">USERS</button>
+            <button class="hmbtn">REPORTS</button>
+            <button class="hmbtn">ADMIN</button>
+          </div>
         </div>
       </div>
+    </div> -->
+    <div class="outer">
       <div style="width: 100%">
         <div class="heading">
           <button class="ctab" >

@@ -5,13 +5,101 @@
 
 body {
     font-family: quicksand;
-    width: 1024px;
+    /* width: 100%; */
     margin: auto;
     background-color: #EEEEEE;
     opacity: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* +++++++++++++++++++++++++++++++ */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    width: 100%;
+        /* padding-top: 11px; */
+        align-self: center;
+        background-image: url("../assets/header\ pattern\ svg.svg");
+        border-bottom: 2px solid #31B9E4;
+        border-width: 2px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(0, 0, 0);
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    margin: 0;
+    margin-right: 32px;
+
+}
+.nav-menu2 {
+    display: flex;
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+}
+.nav-menu2 ul{
+    margin: 0;
+}
+
+.nav-item {
+    font-family: quicksand;
+    background: none;
+    border: none;
+    align-self:center ;
+
+}
+
+.nav-link {
+    font-family: quicksand;
+    background: none;
+    border: none;
+    color: #3FD28B;
+    font-size: 14px;
+    font-weight:bold ;
+    margin: 19px 32px 0px 0;
+    padding-bottom: 16px;
+}
+
+.nav-link:hover {
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+
+
+/* +++++++++++++++++++++++++++++++ */
 .outer {
+    width: 976px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,6 +119,23 @@ body {
 
 .btns{
     display: flex;
+}
+.btns2{
+    display: flex;
+}
+
+.hamburger{
+    display: none;
+}
+
+.hmbtn {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
 
 .btn1{
@@ -116,6 +221,7 @@ body {
     justify-content: space-between;
     width: 100%;
     margin-top: 26px;
+    margin-bottom: 24px;
 }
 
 .ltxt{
@@ -185,7 +291,7 @@ select {
 
 .info select {
     all: unset;
-    width: 210px;
+    width: 100%;
     height: 27px;
     font-size: 16px;
     font-weight: bold;
@@ -194,7 +300,7 @@ select {
     margin-bottom: 8px;
     margin-top: 5px;
     background: url("../assets/icons/arrow-down.svg") no-repeat right;
-    padding-right: 54px;
+    /* padding-right: 54px; */
 
 }
 
@@ -241,4 +347,67 @@ select {
     color: #0000001F;
     margin: auto 16px auto 16px;
     font-weight: bolder;
+}
+
+@media screen and (max-width:976px) {
+    .nav-menu {
+            position: fixed;
+            left: -100%;
+            top: 5rem;
+            flex-direction: column;
+            background-color: #EEEEEE;
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+            /*     0 10px 27px rgba(0, 0, 0, 0.05); */
+        }
+    
+        /* .nav-menu.active {
+            left: 0;
+        } */
+    
+        .nav-item {
+            margin: 2.5rem 0;
+        }
+    
+        .hamburger {
+            margin: auto;
+            display: block;
+            cursor: pointer;
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+
+    .outer{
+        width: 80%;
+    }
+    .container{
+        width: 80%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card{
+        width: 80%;
+        margin-bottom: 24px;
+    }
+
+}
+
+@media screen and (max-width:700px){
+    .card {
+            width: 364px;
+            margin: auto;
+            margin-bottom: 24px;
+        }
 }
