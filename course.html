@@ -20,45 +20,29 @@ function mobileMenu() {
     <title>DASHBOARD</title>
   </head>
   <body>
-    <header class="header">
-        <nav class="navbar">
-
-            <img src="./assets/icons/logo used in header.svg" alt="" />
-            <div style="display: flex;" > 
-
-              <ul class="nav-menu">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Contact</a>
-                </li>
+    <div class="header">
+            <img src="./assets/icons/logo used in header.svg" class="header--icon" />
+            <div class="nav--btns">
+              <a href="javascript:void(0)" class="closebtn" id="closeBtn" onclick="closeMenu()">&times;</a>
+              <ul class="nav-links" id="navLinks">
+                <li class="nav-item active"><a href="/pages/login.html">DASHBOARD</a></li>
+                <li class="nav-item" id="content" onclick='headerClick("content")'><a href="#">CONTENT</a></li>
+                <li class="nav-item" id="users" onclick='headerClick("users")'><a href="#">USERS</a></li>
+                <li class="nav-item" id="reports" onclick='headerClick("reports")'><a href="#">REPORTS</a></li>
+                <li class="nav-item" id="admin" onclick='headerClick("admin")'><a href="#">ADMIN</a></li>
               </ul>
-              <ul class="nav-menu2">
-                <li class="btn2">
-                  <img src="./assets/icons/alerts.svg" alt="alert" />
-                </li>
-                <li class="btn3">
-                  <img src="./assets/icons/announcements.svg" alt="announcements" />
-                </li>
-                <li class="btn3">
-                  <img src="./assets/icons/account_circle.svg" alt="user" />
-                </li>
-              </ul>
-              <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+              <div class="nav-item"><span class="heading--badge">2</span><img src="./assets/icons/alerts.svg" /></div>
+              <div class="nav-item">
+                <span class="heading--badge">1</span>
+                <img src="./assets/icons/announcements.svg" />
               </div>
-            </nav>
+              <div class="nav-item">
+                <span class="heading--badge avatar--badge">T</span>
+                <img class="avatar" src="./assets/icons/account_circle.svg" />
+              </div>
+              <img class="nav-item mobile--menu" id="mobile--menu" onclick="openMenu()" src="./assets/icons/hamburger-menu.svg">
+            </div>
           </div>
-</header>
 
 
 
