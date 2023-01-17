@@ -11,7 +11,7 @@
   <body>
     <div class="outer">
       <div class="header">
-        <img src="./assets/icons/logo used in header.svg" alt="" />
+        <img src="./assets/icons/logo_used_in_header.svg" alt="" />
       </div>
       <div class="form">
         <form>
@@ -22,16 +22,16 @@
                 alt="back arrow"
                 class="back"
               />
-              <h1>Log in with Quantom</h1>
+              <h1>Log in with Quantum</h1>
             </div>
             <div class="inps">
               <div class="radios">
                 <div class="rad">
-                  <input type="radio" class="radbtn" name="district" />
+                  <input type="radio" class="radbtn" name="choice" />
                   <label for="">District</label>
                 </div>
                 <div class="rad">
-                  <input type="radio" class="radbtn" name="independent" />
+                  <input type="radio" class="radbtn" name="choice" />
                   <label for="">Independent school</label>
                 </div>
               </div>
@@ -51,11 +51,17 @@
                   class="email"
                   placeholder="Username/Email ID"
                 />
-                <p class="forgot">FORGOT USERNAME?</p>
-
-                <input type="password" name="password" placeholder="Password" />
-
-                <p class="forgot">FORGOT PASSWORD?</p>
+                <a class="forgot" href="#">FORGOT USERNAME?</a>
+                <div class="pass">
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Password"
+                  />
+                  <span class="preview" onclick="showPassword()"></span>
+                </div>
+                <a href="#" class="forgot">FORGOT PASSWORD?</a>
               </div>
               <div class="remember">
                 <input type="checkbox" name="remember" id="remember" />
@@ -67,17 +73,27 @@
         </form>
       </div>
       <div class="about">
-        <p>About</p>
-        <p class="sep">&nbsp&nbsp|&nbsp&nbsp</p>
-        <p>Contact Us</p>
+        <a href="#">About</a>
+        <a class="sep">&nbsp&nbsp|&nbsp&nbsp</a>
+        <a href="#">Contact Us</a>
       </div>
       <div class="footer">
-        <img src="./assets/icons/logo used in footer.svg" alt="footer image" />
-        <p class="sepa">|</p>
+        <img src="./assets/icons/logo_used_in_footer.svg" alt="footer image" />
+        <p class="sepa">&nbsp&nbsp|&nbsp&nbsp</p>
         <p>
           Copyright © 2020-2021 <b>Zeus System Pvt Ltd.</b> All rights reserved.
         </p>
       </div>
     </div>
+    <script>
+      function showPassword() {
+        var password = document.getElementById("password");
+        if (password.type === "password") {
+          password.type = "text";
+        } else {
+          password.type = "password";
+        }
+      }
+    </script>
   </body>
 </html>
