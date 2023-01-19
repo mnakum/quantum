@@ -5,56 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/course.css" />
-    <script  >
-     const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-
-hamburger.addEventListener("click", mobileMenu);
-
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-}
-
-    </script>
+    <script type="module" src="./Javascript/course.js"></script>
     <title>DASHBOARD</title>
   </head>
   <body>
     <div class="header">
-            <img src="./assets/icons/logo_used_in_header.svg" class="header--icon" />
-            <div class="nav--btns">
-              <!-- <a href="javascript:void(0)" class="closebtn" id="closeBtn" onclick="closeMenu()">&times;</a> -->
-              <ul class="nav-links" id="navLinks">
-                <li class="nav-item"><a href="#">DASHBOARD</a></li>
-                <li class="nav-item" id="content"><a href="#">CONTENT</a></li>
-                <li class="nav-item" id="users"><a href="#">USERS</a></li>
-                <li class="nav-item" id="reports"><a href="#">REPORTS</a></li>
-                <li class="nav-item" id="admin"><a href="#">ADMIN</a></li>
-              </ul>
-              <div class="nav-item"><span class="heading--badge">2</span><img src="./assets/icons/alerts.svg" /></div>
-              <div class="nav-item">
-                <span class="heading--badge">1</span>
-                <img src="./assets/icons/announcements.svg" />
-              </div>
-              <div class="nav-item">
-                <span class="heading--badge avatar--badge">T</span>
-                <img class="avatar" src="./assets/icons/account_circle.svg" />
-              </div>
-              <img class="nav-item mobile--menu" id="mobile--menu" onclick="openMenu()" src="./assets/icons/hamburger-menu.svg">
-            </div>
-          </div>
-
+      <img src="./assets/icons/logo_used_in_header.svg" class="header--icon" />
+      <div class="nav--btns">
+        <!-- <a href="javascript:void(0)" class="closebtn" id="closeBtn" onclick="closeMenu()">&times;</a> -->
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-item"><a href="#">DASHBOARD</a></li>
+          <li class="nav-item" id="content"><a href="#">CONTENT</a></li>
+          <li class="nav-item" id="users"><a href="#">USERS</a></li>
+          <li class="nav-item" id="reports"><a href="#">REPORTS</a></li>
+          <li class="nav-item" id="admin"><a href="#">ADMIN</a></li>
+        </ul>
+        <div class="nav-item">
+          <span class="heading--badge">2</span
+          ><img src="./assets/icons/alerts.svg" />
+        </div>
+        <div class="nav-item">
+          <span class="heading--badge">1</span>
+          <img src="./assets/icons/announcements.svg" />
+        </div>
+        <div class="nav-item">
+          <span class="heading--badge avatar--badge">T</span>
+          <img class="avatar" src="./assets/icons/account_circle.svg" />
+        </div>
+        <img
+          class="nav-item mobile--menu"
+          id="mobile--menu"
+          onclick="openMenu()"
+          src="./assets/icons/hamburger-menu.svg"
+        />
+      </div>
+    </div>
 
     <div class="outer">
       <div style="width: 100%">
         <div class="heading">
-          <button class="ctab" style="display: flex; justify-content: center; align-items: center; " >
-            <img src="./assets/icons/courses.svg" alt=""> <span style="font-size: 24px; font-weight:bold; margin-left: 8px; ">4</span> <p>&nbspCourses</p>
+          <button
+            class="ctab"
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <img src="./assets/icons/courses.svg" alt="" />
+            <span style="font-size: 24px; font-weight: bold; margin-left: 8px"
+              >4</span
+            >
+            <p>&nbspCourses</p>
           </button>
-          <button class="ctab" style="display: flex; justify-content: center; align-items: center; " >
-            <img src="./assets/icons/classes.svg" alt=""> <span style="font-size: 24px; font-weight:bold; margin-left: 8px;">4</span> <p>&nbspCourses</p>
+          <button
+            class="ctab"
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <img src="./assets/icons/classes.svg" alt="" />
+            <span style="font-size: 24px; font-weight: bold; margin-left: 8px"
+              >4</span
+            >
+            <p>&nbspCourses</p>
           </button>
-
         </div>
       </div>
       <div class="filters">
@@ -70,173 +79,27 @@ function mobileMenu() {
         </div>
       </div>
 
-      <div class="container">
-        <div class="card">
-          <div class="content">
-            <img src="./assets/images/imageMask.png" alt="img1">
-            <div class="info">
-              <h3>Acceleration</h3>
-              <p>physics <span>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp</span>Grade 7 <span>+2</span></p>
-              <p><b style="color: #222222;">4</b>&nbspUnits&nbsp <b style="color: #222222;">18</b>&nbspLessons <b style="color: #222222;">24</b>&nbspTopics   </p>
-              <select name="sorting" id="sorting">
-                <option value="name">Mr. Franks Class B</option>
-              </select>
-              <p>50 Students<span>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp</span>21-Jan-2020 - 21-Aug-2020</p>
-            </div>
-            <div class="favourite">
-              <img src="./assets/icons/favourite.svg" alt="">
-            </div>
-          </div>
-          <div class="cardbtns">
-            <a href="#">
-              <img src="./assets/icons/preview.svg" alt="preview">
-              
-            </a>
-            <a href="#">
-              <img class="btwn" src="./assets/icons/manage_course.svg" alt="manage">
-              
-            </a>
-            <a href="#">
-              <img class="btwn" src="./assets/icons/grade_submissions.svg" alt="grade">
-              
-            </a>
-            <a href="#">
-              <img src="./assets/icons/reports.svg" alt="report">
-              
-            </a>
-          </div>
+      <div class="container" id="container">
         </div>
 
-
-
-        <div class="card">
-          <div class="content">
-            <img src="./assets/images/imageMask-1.png" alt="img1">
-            <div class="info">
-              <h3>Displacement, Velocity and Speed</h3>
-              <p>physics 2 <span>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp</span>Grade 6 + 3 <span>+2</span></p>
-              <p><b style="color: #222222;">2</b>&nbspUnits&nbsp <b style="color: #222222;">15</b>&nbspLessons <b style="color: #222222;">20</b>&nbspTopics   </p>
-              <select name="sorting" id="sorting" disabled>
-                <option value="name">No Classes</option>
-              </select>
-            </div>
-            <div class="favourite">
-              <img src="./assets/icons/favourite.svg" alt="">
-            </div>
-          </div>
-          <div class="cardbtns">
-            <a href="#">
-              <img src="./assets/icons/preview.svg" alt="preview">
-              
-            </a>
-            <a href="#">
-              <img class="btwn-dis" src="./assets/icons/manage_course.svg" alt="manage"  >
-              
-            </a>
-            <a href="#">
-              <img class="btwn-dis" src="./assets/icons/grade_submissions.svg" alt="grade">
-              
-            </a>
-            <a href="#">
-              <img src="./assets/icons/reports.svg" alt="report">
-              
-            </a>
-          </div>
-        </div>
-
-
-
-        <div class="card">
-          <div class="content">
-            <img src="./assets/images/imageMask-3.png" alt="img1">
-            <div class="info">
-              <h3>Introduction to Biology: Micro organisms and how they affec...</h3>
-              <p>Biology <span>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp</span>Grade 4 <span>+1</span></p>
-              <p><b style="color: #222222;">5</b>&nbspUnits&nbsp <b style="color: #222222;">16</b>&nbspLessons <b style="color: #222222;">22</b>&nbspTopics   </p>
-              <select name="sorting" id="sorting">
-                <option value="name">All Classes</option>
-              </select>
-              <p>330 Students</p>
-            </div>
-            <div class="favourite">
-              <img src="./assets/icons/favourite.svg" alt="">
-            </div>
-          </div>
-          <div class="cardbtns">
-            <a href="#">
-              <img src="./assets/icons/preview.svg" alt="preview">
-              
-            </a>
-            <a href="#">
-              <img class="btwn-dis" src="./assets/icons/manage_course.svg" alt="manage">
-              
-            </a>
-            <a href="#">
-              <img class="btwn-dis" src="./assets/icons/grade_submissions.svg" alt="grade">
-              
-            </a>
-            <a href="#">
-              <img src="./assets/icons/reports.svg" alt="report">
-              
-            </a>
-          </div>
-        </div>
-
-
-
-        <div class="card">
-          <div class="expired" > <p> EXPIRED</p></div>
-          <div class="content">
-            <img src="./assets/images/imageMask-2.png" alt="img1">
-            <div class="info">
-              <h3>Introduction to High School Mathematics</h3>
-              <p>Mathematics <span>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp</span>Grade 8 <span>+3</span></p>
-              <p><b style="color: #222222;">4</b>&nbspUnits&nbsp <b style="color: #222222;">18</b>&nbspLessons <b style="color: #222222;">24</b>&nbspTopics   </p>
-              <select name="sorting" id="sorting">
-                <option value="name">Mr. Franks Class A</option>
-              </select>
-              <p>44 Students<span>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp</span>14-Oct-2019 - 20-Oct-2020</p>
-            </div>
-            <div class="favourite">
-              <img src="./assets/icons/favourite.svg" alt="">
-            </div>
-          </div>
-          <div class="cardbtns">
-            <a href="#">
-              <img src="./assets/icons/preview.svg" alt="preview">
-              
-            </a>
-            <a href="#">
-              <img class="btwn" src="./assets/icons/manage_course.svg" alt="manage">
-              
-            </a>
-            <a href="#">
-              <img class="btwn" src="./assets/icons/grade_submissions.svg" alt="grade">
-              
-            </a>
-            <a href="#">
-              <img src="./assets/icons/reports.svg" alt="report">
-              
-            </a>
-          </div>
-        </div>
-        </div>
+        <!-- **************************************FOOTER***************************************** -->
       </div>
-
-      <!-- **************************************FOOTER***************************************** -->
-      <div class="about">
-        <a href="#">About</a>
-        <a class="sep">&nbsp&nbsp|&nbsp&nbsp</a>
-        <a href="#">Contact Us</a>
-      </div>
-      <div class="footer">
-        <img src="./assets/icons/logo_used_in_footer.svg" alt="footer image" />
-        <p class="sepa">&nbsp&nbsp|&nbsp&nbsp</p>
-        <p>
-          Copyright © 2020-2021 <b>Zeus System Pvt Ltd.</b> All rights reserved.
-        </p>
-      </div>
-      </div>
+        <div class="about">
+          <a href="#">About</a>
+          <a class="sep">&nbsp&nbsp|&nbsp&nbsp</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="footer">
+          <img
+            src="./assets/icons/logo_used_in_footer.svg"
+            alt="footer image"
+          />
+          <p class="sepa">&nbsp&nbsp|&nbsp&nbsp</p>
+          <p>
+            Copyright © 2020-2021 <b>Zeus System Pvt Ltd.</b> All rights
+            reserved.
+          </p>
+        </div>
     </div>
   </body>
 </html>
