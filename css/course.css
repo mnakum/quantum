@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-weight: 600;
 }
 
 .outer {
@@ -24,7 +25,7 @@ body {
     /* min-width: 614px; */
     width: 100%;
     height: 56px;
-    background-image: url("../../assets/header-pattern-svg.svg");
+    background-image: url("/assets/header_pattern_svg.svg");
     background-blend-mode: overlay;
     background-color: #25313f;
     display: flex;
@@ -284,11 +285,19 @@ select :disabled {
     margin-left: 16px;
     margin-right: auto;
 }
-.info h3{
+.info .coursename{
+    font-weight: 600;
+    min-height: 20px;
+    max-height: 40px;
     margin-top: 0;
     margin-bottom: 7px;
     font-size: 16px;
     color: #222222;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 
 }
 
@@ -312,6 +321,21 @@ select :disabled {
     background: url("../assets/icons/arrow-down.svg") no-repeat right;
     /* padding-right: 54px; */
 
+}
+
+.favourite .deactive{
+    height: 24px;
+    width: 24px;
+    background-image: url("/assets/icons/unfavourite.svg");
+    background-color: transparent;
+    border: none;
+}
+.favourite .active{
+    height: 24px;
+    width: 24px;
+    background-image: url("/assets/icons/favourite.svg");
+    border: none;
+    background-color: transparent;
 }
 
 .favourite img{
@@ -384,38 +408,11 @@ select :disabled {
     } */
 
     .header .nav--btns .nav-links {
-        display: block;
-        text-align: center;
-        height: 120%;
-        width: 0%;
-        position: fixed;
-        z-index: 1;
-        top: -30px;
-        left: -50px;
-        background-color: rgb(0, 0, 0);
-        background-color: rgba(0, 0, 0, 0.9);
-        overflow-x: hidden;
-        transition: 0.5s;
+        display: none;
+
     }
 
-    .header .nav--btns .nav-links .nav-item {
-        position: relative;
-        top: 25%;
-        width: 80%;
-        padding-left: 0px;
-    }
-
-    .header .nav--btns .nav-links .nav-item a {
-        text-decoration: none;
-        font-size: 20px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
-
-    .header .nav--btns .nav-item .heading--badge {
-        top: 15px;
-    }
+  
 
     .header .nav--btns #mobile--menu {
         display: block;
@@ -431,28 +428,22 @@ select :disabled {
     
    
     .card {
-        width: 571px;
+        width: 100%;
+        max-width: 571px;
         min-width: 385px;
     } 
+    .info{
+        width: 100%;
+    }
 
     .outer {
         width: 80%;
         min-width: 400px;
         padding: 0;
     }
+    body{
+        min-width: 450px;
+    }
 }
 
-@media screen and (max-width:714px) {
-    .card {
-            width: auto;
-            min-width: 385px;
-        }
-    body{
-        min-width: 450px;
-    }
-}
-@media screen and (max-width:451px) {
-    body{
-        min-width: 450px;
-    }
-}
+

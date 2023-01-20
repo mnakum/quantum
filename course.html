@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/course.css" />
-    <script type="module" src="./Javascript/course.js"></script>
+    <link rel="stylesheet" href="/css/course.css" />
+    <script type="module" src="/Javascript/course.js">
+      
+    </script>
     <title>DASHBOARD</title>
   </head>
   <body>
     <div class="header">
-      <img src="./assets/icons/logo_used_in_header.svg" class="header--icon" />
+      <img src="/assets/icons/logo_used_in_header.svg" class="header--icon" />
       <div class="nav--btns">
         <!-- <a href="javascript:void(0)" class="closebtn" id="closeBtn" onclick="closeMenu()">&times;</a> -->
         <ul class="nav-links" id="navLinks">
@@ -22,21 +24,20 @@
         </ul>
         <div class="nav-item">
           <span class="heading--badge">2</span
-          ><img src="./assets/icons/alerts.svg" />
+          ><img src="/assets/icons/alerts.svg" />
         </div>
         <div class="nav-item">
           <span class="heading--badge">1</span>
-          <img src="./assets/icons/announcements.svg" />
+          <img src="/assets/icons/announcements.svg" />
         </div>
         <div class="nav-item">
           <span class="heading--badge avatar--badge">T</span>
-          <img class="avatar" src="./assets/icons/account_circle.svg" />
+          <img class="avatar" src="/assets/icons/account_circle.svg" />
         </div>
         <img
           class="nav-item mobile--menu"
           id="mobile--menu"
-          onclick="openMenu()"
-          src="./assets/icons/hamburger-menu.svg"
+          src="/assets/icons/hamburger-menu.svg"
         />
       </div>
     </div>
@@ -48,7 +49,7 @@
             class="ctab"
             style="display: flex; justify-content: center; align-items: center"
           >
-            <img src="./assets/icons/courses.svg" alt="" />
+            <img src="/assets/icons/courses.svg" alt="" />
             <span style="font-size: 24px; font-weight: bold; margin-left: 8px"
               >4</span
             >
@@ -58,7 +59,7 @@
             class="ctab"
             style="display: flex; justify-content: center; align-items: center"
           >
-            <img src="./assets/icons/classes.svg" alt="" />
+            <img src="/assets/icons/classes.svg" alt="" />
             <span style="font-size: 24px; font-weight: bold; margin-left: 8px"
               >4</span
             >
@@ -74,13 +75,13 @@
             <option value="name">Course Name</option>
           </select>
           <button class="sortbtn">
-            <img src="./assets/icons/sort.svg" alt="" />
+            <img src="/assets/icons/sort.svg" alt="" />
           </button>
         </div>
       </div>
 
       <div class="container" id="container">
-        </div>
+      </div>
 
         <!-- **************************************FOOTER***************************************** -->
       </div>
@@ -91,7 +92,7 @@
         </div>
         <div class="footer">
           <img
-            src="./assets/icons/logo_used_in_footer.svg"
+            src="/assets/icons/logo_used_in_footer.svg"
             alt="footer image"
           />
           <p class="sepa">&nbsp&nbsp|&nbsp&nbsp</p>
@@ -101,5 +102,11 @@
           </p>
         </div>
     </div>
+    <script>
+      function fav(id) {
+        id.className === "deactive" ? document.getElementById(id.id).className = "active" :document.getElementById(id.id).className = "deactive";
+
+      }
+    </script>
   </body>
 </html>
