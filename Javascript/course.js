@@ -44,9 +44,9 @@ fetch("../Json/courses.json")
               }</p>
             </div>
             <div class="favourite">
-              <button id="favbtn${
-                result.id
-              }" class="deactive" onclick=fav(favbtn${result.id}) ></button>
+              <button id="favbtn${result.id}" class= ${
+        result.isfavourite ? "active" : "deactive"
+      } onclick=fav(favbtn${result.id}) ></button>
             </div>  
             </div>
           <div class="cardbtns">

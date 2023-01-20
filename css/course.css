@@ -106,60 +106,6 @@ body {
     border: 2px solid #3fd28b;
 }
 
-.btn1 {
-    font-family: quicksand;
-    background: none;
-    border: none;
-    color: #3FD28B;
-    font-size: 14px;
-    margin: 19px 32px 0px 0;
-    padding-bottom: 16px;
-}
-
-.btn2 {
-    font-family: quicksand;
-    background: none;
-    border: none;
-    margin: 16px 32px 0px 0;
-    padding-bottom: 16px;
-}
-
-.btn3 {
-    font-family: quicksand;
-    background: none;
-    border: none;
-    margin: 16px 32px 0px 0;
-    padding-bottom: 16px;
-}
-
-.btn1:focus {
-    font-family: quicksand;
-    background: none;
-    border: none;
-    color: #3FD28B;
-    font-size: 14px;
-    margin: 19px 32px 0px 0;
-    padding-bottom: 12px;
-    border-bottom: 4px solid #FFFFFF;
-}
-
-.btn2:focus {
-    font-family: quicksand;
-    background: none;
-    border: none;
-    margin: 16px 32px 0px 0;
-    padding-bottom: 12px;
-    border-bottom: 4px solid #FFFFFF;
-}
-
-.btn3:focus {
-    font-family: quicksand;
-    background: none;
-    border: none;
-    margin: 16px 32px 0px 0;
-    padding-bottom: 12px;
-    border-bottom: 4px solid #FFFFFF;
-}
 
 .heading{
     display: flex;
@@ -169,7 +115,6 @@ body {
 }
 
 .ctab{
-    font-family: quicksand;
     width: 50%;
     border: none;
     background: #8DDC97;

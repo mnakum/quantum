@@ -16,7 +16,8 @@
         "managecourseEnabled":true,
         "gradesubmissionEnabled":true,
         "reporEnabled":true,
-        "expired":false
+        "expired":false,
+        "isfavourite" : true
     },
     {
         "id":2,
@@ -35,7 +36,9 @@
         "managecourseEnabled":false,
         "gradesubmissionEnabled":false,
         "reporEnabled":true,
-        "expired":false
+        "expired":false,
+        "isfavourite" : false
+
     },
     {
         "id":3,
@@ -54,7 +57,9 @@
         "managecourseEnabled":false,
         "gradesubmissionEnabled":false,
         "reporEnabled":true,
-        "expired":false
+        "expired":false,
+        "isfavourite" : true
+
     },
     {
         "id":4,
@@ -73,7 +78,9 @@
         "managecourseEnabled":true,
         "gradesubmissionEnabled":true,
         "reporEnabled":true,
-        "expired":true
+        "expired":true,
+        "isfavourite" : false
+
     },
     {
         "id":5,
@@ -92,7 +99,9 @@
         "managecourseEnabled":true,
         "gradesubmissionEnabled":true,
         "reporEnabled":true,
-        "expired":false
+        "expired":false,
+        "isfavourite" : false
+
     },
     {
         "id":6,
@@ -111,7 +120,9 @@
         "managecourseEnabled":false,
         "gradesubmissionEnabled":false,
         "reporEnabled":true,
-        "expired":false
+        "expired":false,
+        "isfavourite" : true
+
     },
     {
         "id":7,
@@ -130,7 +141,9 @@
         "managecourseEnabled":false,
         "gradesubmissionEnabled":false,
         "reporEnabled":true,
-        "expired":false
+        "expired":false,
+        "isfavourite" : false
+
     },
     {
         "id":8,
@@ -149,6 +162,8 @@
         "managecourseEnabled":true,
         "gradesubmissionEnabled":true,
         "reporEnabled":true,
-        "expired":true
+        "expired":true,
+        "isfavourite" : false
+
     }
 ]
